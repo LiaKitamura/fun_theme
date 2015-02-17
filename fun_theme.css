@@ -6,8 +6,75 @@
 Notes on getting started:
 - Plan to build this site from a MOBILE FIRST perspective. We will build the mobile layout first, and then adjust our layout for progressively larger screen sizes.
 */
-.mobile-nav {
-  display: none;
+/* Global */
+*, *:before, *:after{ box-sizing: border-box; }
+img{max-width: 100%;}
+
+
+
+/* Header */
+.logo {
+
+}
+
+.logo a.octo{
+    background-color: #E34336;
+    padding: 15px;
+    border-radius: 50%;
+    max-width: 80px
+/*    overflow: visible; */
+}
+.logo .octo img{ height: auto; min-width: 35px;}
+.table{ display: table; }
+.td{ display: table-cell;  }
+.td-center-vert{ vertical-align: middle; }
+
+.phone {
+    background: #F0BC12;
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+/* Navigation */
+.box-shadow-menu {
+  position: relative;
+  padding: 0 .75em 0 1.75em;
+  background: #2196EC;
+    color: #fff;
+    font-size: 1.5em;
+    border-radius: .2em;
+}
+.box-shadow-menu:before {
+  content: "";
   position: absolute;
-  list-style: none;
+  left: .2em;
+  top: 0.2em;
+  width: 1em;
+  height: 0.15em;
+    border-radius: .5em;
+  background: white;
+  box-shadow:
+    0 0.25em 0 0 white,
+    0 0.5em 0 0 white;
+}
+
+
+
+.mobile-nav {
+    display: none;
+    position: absolute;
+    list-style: none;
+}
+
+.mobile-nav li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #2196EC;
+    font-size: 1.5em;
+}
+
+.mobile-nav li a{
+    text-decoration: none;
 }
