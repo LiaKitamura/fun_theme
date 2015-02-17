@@ -6,3 +6,8 @@
 Notes on getting started:
 - Plan to build this site from a MOBILE FIRST perspective. We will build the mobile layout first, and then adjust our layout for progressively larger screen sizes.
 */
+.mobile-nav {
+  display: none;
+  position: absolute;
+  list-style: none;
+}
