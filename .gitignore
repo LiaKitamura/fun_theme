@@ -1,0 +1,10 @@
+# ignore these directories
+images
+design
+
+#ignore these filetypes
+*.png
+*.jpg
+*.psd
+*.gif
+*.pdf
